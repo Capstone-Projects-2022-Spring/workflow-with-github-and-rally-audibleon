@@ -40,6 +40,7 @@ public class CalculatorModelTest {
 	@Test
 	public void shouldPercent() { assertEquals(0.1, calc.operationPercent(10.0), 0.1); }
 
+	// Testing
 	@Test
 	public  void shouldClear() { assertEquals(0.0, calc.operationClear(), 0.1);}
 
