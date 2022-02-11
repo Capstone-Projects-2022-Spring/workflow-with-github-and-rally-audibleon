@@ -17,7 +17,12 @@ public class CalculatorModelTest {
 		// Assert 2.0 plus 2.0 is equals 4.0 plus or minus 0.1 epsilon
 		// Double comparaison necessite to specify an epsilon. 
 		assertEquals(4.0, calc.operationAdd(2.0, 2.0), 0.1);
-	} 
+	}
+
+	@Test
+	public void shouldAddThreePlusThree(){
+		assertEquals(6.0, calc.operationAdd(3.0, 3.0), 0.1);
+	}
 
 	@Test
 	public void shouldSubstTwoAndTwo(){
@@ -25,10 +30,20 @@ public class CalculatorModelTest {
 	} 
 
 	@Test
+	public void shouldSubtOneAndNine(){
+		assertEquals(-8.0, calc.operationSubst(1, 9), 0.1);
+	}
+
+	@Test
 	public void shouldMultTwoByOne(){
 		assertEquals(2.0, calc.operationMult(2.0, 1.0), 0.1);
 	} 
 
+	@Test
+	public void shouldMultThreeBy9(){
+		assertEquals(27.0, calc.operationMult(3.0, 9.0), 0.1);
+	}
+	
 	@Test
 	public void shouldDivTwoByOne(){
 		assertEquals(2.0, calc.operationDiv(2.0, 1.0), 0.1);
