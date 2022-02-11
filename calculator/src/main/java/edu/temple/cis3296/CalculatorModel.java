@@ -119,16 +119,16 @@ public class CalculatorModel {
     }
 
     public double operationMult(double rhs, double lhs) {
-        return rhs;
+        return lhs * rhs;
     }
 
     public double operationDiv(double rhs, double lhs) {
-        return rhs;
+        return lhs / rhs;
     }
 
-    public double operationPercent(double value) { return 0.1; }
+    public double operationPercent(double value) { return value * 0.01; }
 
-    public double operationInverse(double value) { return -42.0; }
+    public double operationInverse(double value) { return 1 / value; }
 
 
 }
